@@ -8,6 +8,6 @@ if __name__ == '__main__':
     t.backward(200)
     t.left(90)
     t.down()
-    t.speed(10)
+    t.speed(0)
     for i in range(20,201,20):
         drawCircle(t,i)
