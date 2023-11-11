@@ -6,7 +6,8 @@ from edulidD import *
 def main(dataFile):
     examDict = readFile(dataFile)
     examCentroids = createCentroids(5,examDict)
-    examClusters = createClusterss(5,examCentroids,examDict,3)
+    createClusterss(5,examCentroids,examDict,3)
 
 if __name__ == "__main__":
     main('./chapter_7/cs150exams.txt')
+    
