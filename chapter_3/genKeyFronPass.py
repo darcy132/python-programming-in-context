@@ -22,3 +22,7 @@ def genKeyFromPass(password):
     beforeString = removeMatches(alphabet[:lastIdx],password)
     key = password + afterString + beforeString
     return key
+
+if __name__ == "__main__":
+    a = genKeyFromPass('thisisaeverygoodday')
+    print(a)

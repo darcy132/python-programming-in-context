@@ -30,19 +30,18 @@ def stripSpaces(myString):
             newString +=myString[i]
     return newString
 def encryptMessage():
-    msg = input('Enter a message to encrypt')
+    msg = input('Enter a message to encrypt:')
     cipherText = scramble2Encrypt(msg)
     print('The encrypted message is:',cipherText)
+    return cipherText
 
 
 
 
 if __name__ == "__main__":
-    a = "ababababababab"
-    b = "Today,I learn coding."
-    c = scramble2Encrypt(a)
-    d = scramble2Encrypt(b)
-    e = scramble2Decrypt(c)
-    f = scramble2Decrypt(d)
-    print(a,b,c,d,e,f,sep='\n')
-
+    def test():
+        a = encryptMessage()
+        b = scramble2Decrypt(a)
+        print(a)
+        print(b)
+    test()

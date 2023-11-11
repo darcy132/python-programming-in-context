@@ -5,6 +5,7 @@ import turtle
 def showMontePi(numDarts):
     wn = turtle.Screen()
     drawingT = turtle.Turtle()
+    drawingT.speed(0)
 
     wn.setworldcoordinates(-2,-2,2,2)
 
@@ -20,6 +21,7 @@ def showMontePi(numDarts):
 
     inCircle = 0 
     drawingT.up()
+    
 
     for i in range(numDarts):
         x = random.random()
