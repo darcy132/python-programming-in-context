@@ -12,7 +12,9 @@ def tree(t,trunkLength):
     
 if __name__ == "__main__":
     import turtle
+    wn = turtle.Screen()
     t = turtle.Turtle()
+    t.speed(0)
     t.up()
     t.goto(0,-255)
     t.down()
@@ -20,3 +22,4 @@ if __name__ == "__main__":
     t.left(90)
     tree(t,115)
     t.hideturtle()
+    wn.exitonclick()

@@ -1,34 +1,17 @@
+import turtle
 
-import ast
+# 创建一个Turtle对象
+t = turtle.Turtle()
 
-class StringDictConverter:
-    def __init__(self, input_string):
-        self.input_string = input_string
+# 设置世界坐标系范围
+turtle.setworldcoordinates(-1, -1, 10, 10)
 
-    def convert_to_dict(self):
-        try:
-            # 使用ast模块的literal_eval函数将字符串转换为字典
-            dictionary = ast.literal_eval(self.input_string)
-            if isinstance(dictionary, dict):
-                return dictionary
-            else:
-                raise ValueError("输入字符串不是有效的字典表示形式")
-        except (ValueError, SyntaxError) as e:
-            print(f"转换失败：{e}")
-            return None
-        
-def getFreq(t):
-    return t[1]
+# 画一个简单的图形，使用实际坐标系中的坐标
+t.penup()
+t.goto(-1, -1)
+t.pendown()
+t.goto(10,10)
 
-def readFile(textFile):
-    with open(textFile,'r') as f:
-        a = f.read()
-        b = StringDictConverter(a)
-        return_dict = b.convert_to_dict()
-        lfList = list(return_dict.items())
-        lfList.sort(key = getFreq,reverse=True)
-        for key in lfList:
-            print("{0} {1:.3f}".format(key[0]))
 
-if __name__ == "__main__":
-    readFile("letterFrequency.txt")
+# 等待点击关闭窗口
+turtle.exitonclick()

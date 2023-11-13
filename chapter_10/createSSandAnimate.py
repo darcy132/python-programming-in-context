@@ -10,10 +10,10 @@ def createSSandAnimate():
     m = Planet("Mercury",19.5,1000,.25,0,2,"Blue")
     ss.addPlanet(m)
 
-    m = Planet("Mars",50,9000,0.5,0,1.63,"red")
+    m = Planet("Earth",47.5,5000,0.3,0,2.0,"green")
     ss.addPlanet(m)
 
-    m = Planet("Earth",47.5,5000,0.3,0,2.0,"green")
+    m = Planet("Mars",50,9000,0.5,0,1.63,"red")
     ss.addPlanet(m)
 
     m = Planet("Jupiter",100,49000,0.7,0,1,"black")

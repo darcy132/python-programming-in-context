@@ -20,6 +20,9 @@ def sierpinski(t,p1,p2,p3,depth):
 if __name__ =="__main__":
     import turtle
     t = turtle.Turtle()
+    wn = turtle.Screen()
     t.color("darkorange")
     sierpinski(t,[-225,-250],[225,-250],[0,225],5)
     t.hideturtle()
+    wn.exitonclick()
+    
